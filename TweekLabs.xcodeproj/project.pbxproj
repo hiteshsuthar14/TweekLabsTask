@@ -11,19 +11,16 @@
 		380159F828B77B96006CD627 /* Switzer-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 380159F528B77B96006CD627 /* Switzer-Regular.otf */; };
 		380159F928B77B96006CD627 /* Switzer-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 380159F628B77B96006CD627 /* Switzer-Semibold.otf */; };
 		380159FA28B77B96006CD627 /* Switzer-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 380159F728B77B96006CD627 /* Switzer-Medium.otf */; };
-		3830A32428BB5D2B00778B22 /* CustomViewModifers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3830A32328BB5D2B00778B22 /* CustomViewModifers.swift */; };
-		389B489928ACBE7900B1B4F9 /* SearchboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B489828ACBE7900B1B4F9 /* SearchboxView.swift */; };
-		389B489B28ACE5CD00B1B4F9 /* Temp view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B489A28ACE5CD00B1B4F9 /* Temp view.swift */; };
 		389B489D28ACE8BD00B1B4F9 /* Extension-ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389B489C28ACE8BD00B1B4F9 /* Extension-ScreenSize.swift */; };
 		38AE709828AA4C8900D53A3D /* TweekLabsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE709728AA4C8900D53A3D /* TweekLabsApp.swift */; };
 		38AE709A28AA4C8900D53A3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE709928AA4C8900D53A3D /* ContentView.swift */; };
 		38AE709C28AA4C8B00D53A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AE709B28AA4C8B00D53A3D /* Assets.xcassets */; };
 		38AE709F28AA4C8B00D53A3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AE709E28AA4C8B00D53A3D /* Preview Assets.xcassets */; };
 		38AE70A628AA4F4F00D53A3D /* ProxyTabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE70A528AA4F4F00D53A3D /* ProxyTabViews.swift */; };
-		38AE70A828AA4FD800D53A3D /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE70A728AA4FD800D53A3D /* LeaderboardView.swift */; };
 		38AE70AA28AA53C700D53A3D /* Leaderboard-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE70A928AA53C700D53A3D /* Leaderboard-ViewModel.swift */; };
 		38AE70B028AA584F00D53A3D /* ActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE70AF28AA584F00D53A3D /* ActivityData.swift */; };
 		38AE70B228AABCFC00D53A3D /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 38AE70B128AABCFC00D53A3D /* data.json */; };
+		38EB4F7E28BBF583003DD464 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EB4F7D28BBF583003DD464 /* LeaderboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +29,6 @@
 		380159F628B77B96006CD627 /* Switzer-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Switzer-Semibold.otf"; sourceTree = "<group>"; };
 		380159F728B77B96006CD627 /* Switzer-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Switzer-Medium.otf"; sourceTree = "<group>"; };
 		380159FB28B77BA2006CD627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		3830A32328BB5D2B00778B22 /* CustomViewModifers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifers.swift; sourceTree = "<group>"; };
-		389B489828ACBE7900B1B4F9 /* SearchboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchboxView.swift; sourceTree = "<group>"; };
-		389B489A28ACE5CD00B1B4F9 /* Temp view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temp view.swift"; sourceTree = "<group>"; };
 		389B489C28ACE8BD00B1B4F9 /* Extension-ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-ScreenSize.swift"; sourceTree = "<group>"; };
 		38AE709428AA4C8900D53A3D /* TweekLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweekLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38AE709728AA4C8900D53A3D /* TweekLabsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweekLabsApp.swift; sourceTree = "<group>"; };
@@ -42,10 +36,10 @@
 		38AE709B28AA4C8B00D53A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38AE709E28AA4C8B00D53A3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38AE70A528AA4F4F00D53A3D /* ProxyTabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTabViews.swift; sourceTree = "<group>"; };
-		38AE70A728AA4FD800D53A3D /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		38AE70A928AA53C700D53A3D /* Leaderboard-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Leaderboard-ViewModel.swift"; sourceTree = "<group>"; };
 		38AE70AF28AA584F00D53A3D /* ActivityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityData.swift; sourceTree = "<group>"; };
 		38AE70B128AABCFC00D53A3D /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = SOURCE_ROOT; };
+		38EB4F7D28BBF583003DD464 /* LeaderboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				38AE70B128AABCFC00D53A3D /* data.json */,
-				3830A32328BB5D2B00778B22 /* CustomViewModifers.swift */,
 				389B489C28ACE8BD00B1B4F9 /* Extension-ScreenSize.swift */,
 				38AE70AF28AA584F00D53A3D /* ActivityData.swift */,
 			);
@@ -85,9 +78,8 @@
 		389E838728B742C400CB1DE0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				38EB4F7D28BBF583003DD464 /* LeaderboardView.swift */,
 				38AE709928AA4C8900D53A3D /* ContentView.swift */,
-				38AE70A728AA4FD800D53A3D /* LeaderboardView.swift */,
-				389B489828ACBE7900B1B4F9 /* SearchboxView.swift */,
 				38AE70A528AA4F4F00D53A3D /* ProxyTabViews.swift */,
 			);
 			path = Views;
@@ -105,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				38AE709628AA4C8900D53A3D /* TweekLabs */,
-				38AE709B28AA4C8B00D53A3D /* Assets.xcassets */,
 				380159FC28B77C2C006CD627 /* Fonts */,
+				38AE709B28AA4C8B00D53A3D /* Assets.xcassets */,
 				38AE709528AA4C8900D53A3D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,7 +119,6 @@
 				389E838728B742C400CB1DE0 /* Views */,
 				389E838828B7434100CB1DE0 /* View Model */,
 				389E838628B741B000CB1DE0 /* Extensions and Misc */,
-				389B489A28ACE5CD00B1B4F9 /* Temp view.swift */,
 				38AE709D28AA4C8B00D53A3D /* Preview Content */,
 			);
 			path = TweekLabs;
@@ -188,7 +179,6 @@
 			);
 			mainGroup = 38AE708B28AA4C8900D53A3D;
 			packageReferences = (
-				3830A32028BB2E0A00778B22 /* XCRemoteSwiftPackageReference "HalfASheet" */,
 			);
 			productRefGroup = 38AE709528AA4C8900D53A3D /* Products */;
 			projectDirPath = "";
@@ -220,15 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3830A32428BB5D2B00778B22 /* CustomViewModifers.swift in Sources */,
-				389B489928ACBE7900B1B4F9 /* SearchboxView.swift in Sources */,
-				38AE70A828AA4FD800D53A3D /* LeaderboardView.swift in Sources */,
 				38AE70B028AA584F00D53A3D /* ActivityData.swift in Sources */,
-				389B489B28ACE5CD00B1B4F9 /* Temp view.swift in Sources */,
 				38AE709A28AA4C8900D53A3D /* ContentView.swift in Sources */,
 				38AE70AA28AA53C700D53A3D /* Leaderboard-ViewModel.swift in Sources */,
 				380159F428B777CE006CD627 /* FontStyles.swift in Sources */,
 				389B489D28ACE8BD00B1B4F9 /* Extension-ScreenSize.swift in Sources */,
+				38EB4F7E28BBF583003DD464 /* LeaderboardView.swift in Sources */,
 				38AE709828AA4C8900D53A3D /* TweekLabsApp.swift in Sources */,
 				38AE70A628AA4F4F00D53A3D /* ProxyTabViews.swift in Sources */,
 			);
@@ -431,17 +418,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3830A32028BB2E0A00778B22 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/franklynw/HalfASheet";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 38AE708C28AA4C8900D53A3D /* Project object */;
 }

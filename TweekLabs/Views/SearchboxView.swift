@@ -14,9 +14,6 @@ struct SearchboxView: View {
             
         }
         .background(.black)
-//        .overlay() {
-//            TextField("Type something", text: $searchTerm)
-//        }
     }
 }
 

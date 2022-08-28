@@ -127,7 +127,7 @@ extension Bundle {
     }
 }
 
-enum SortingCategories : String, CaseIterable { /**Type declartion required to assign raw values*/
+enum SortingCategories : String, CaseIterable {
     case score = "Score"
     case runup = "Run-Up"
     case jump = "Jump"

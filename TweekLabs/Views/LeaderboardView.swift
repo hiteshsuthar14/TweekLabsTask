@@ -27,7 +27,7 @@ struct LeaderboardView: View {
                         .frame( height: geo.size.height * 0.35)
                 }
                 .ignoresSafeArea()
-    
+                
                 ZStack {
                     
                     VStack(spacing: 0) {
@@ -81,7 +81,6 @@ struct LeaderboardView: View {
                                             .frame(width: 27, height: 27)
                                             .padding(.leading, 14)
                                             
-                                            
                                             Image("\(athlete.id)")
                                                 .resizable()
                                                 .frame(width: 43, height: 43)
@@ -115,7 +114,7 @@ struct LeaderboardView: View {
                         .onAppear(perform: vm.sortByScore)
                         
                         .sheet(isPresented: $vm.showingSortSheet) {
-
+                            
                             VStack(alignment: .leading, spacing: 0) {
                                 
                                 Text("Sort By")
@@ -164,80 +163,85 @@ struct LeaderboardView: View {
                         }
                         .background(.white)
                     }
+                    
                 }
-                Spacer()
                 
                 Button(action: { point.scrollTo(vm.userId, anchor: .center) }, label: {
-                    Text("My Score")})
+                    HStack {
+                    Image("ic-arrow-down")
+                    Text("My Score")
+                        }
+                })
                 .frame(width: 130, height: 42)
                 .background(Color("Primary"))
                 .cornerRadius(32)
                 .font(.semibold_14px)
                 .foregroundColor(Color.white)
                 .position(x: UIScreen.screenWidth/2, y: UIScreen.screenHeight*0.75)
-            }
-            if showSearchBox {
-                ZStack {
-                    Rectangle()
-                        .fill(Color("Black 1"))
-                        .opacity(0.62)
-                        .blur(radius: 2, opaque: false)
-                        .ignoresSafeArea()
-                        .onTapGesture {
-                            showSearchBox = false}
-                    VStack(spacing: 0) {
-                        HStack(spacing: 0) {
-                            TextField("Search athele", text: $vm.searchTerm)
-                                .padding(.leading, 18)
+                .shadow(color: Color("Primary").opacity(0.2), radius: 12, x: 0, y: 4)
+                
+                if showSearchBox {
+                    ZStack {
+                        Rectangle()
+                            .fill(Color("Black 1"))
+                            .opacity(0.62)
+                            .blur(radius: 2, opaque: false)
+                            .ignoresSafeArea()
+                            .onTapGesture {
+                                showSearchBox = false}
+                        VStack(spacing: 0) {
+                            HStack(spacing: 0) {
+                                TextField("Search athele", text: $vm.searchTerm)
+                                    .padding(.leading, 18)
+                                
+                                Image("ic-Mglass-gray")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 24, height: 24)
+                                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 18))
+                            }
+                            .font(.regular_14px)
+                            .frame(height: 49)
+                            .background(.white)
+                            .cornerRadius(12)
+                            .foregroundColor(Color("Black 3"))
+                            .padding(EdgeInsets(top: 9, leading: 18, bottom: 18, trailing: 18))
                             
-                            Image("ic-Mglass-gray")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 24, height: 24)
-                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 18))
-                        }
-                        .font(.regular_14px)
-                        .frame(height: 49)
-                        .background(.white)
-                        .cornerRadius(12)
-                        .foregroundColor(Color("Black 3"))
-                        .padding(EdgeInsets(top: 9, leading: 18, bottom: 18, trailing: 18))
-                        
-                        ScrollView {
-                            VStack(spacing: 12) {
-                                ForEach(Array(vm.searchedItems) , id: \.self) {  athlete in
-                                    
-                                    HStack(spacing: 0) {
+                            ScrollView {
+                                VStack(spacing: 12) {
+                                    ForEach(Array(vm.searchedItems) , id: \.self) {  athlete in
                                         
-                                        Image("\(athlete.id)")
-                                            .resizable()
-                                            .frame(width: 43, height: 43)
-                                            .padding(.leading, 18)
-                                        
-                                        Text(athlete.name)
-                                            .font(.medium_16px)
-                                            .padding(.leading, 12)
-                                        
-                                        Spacer()
-                                        
-                                        Text(athlete.score, format: .number)
-                                            .font(.medium_18px)
-                                            .frame(width: 22, height: 24)
-                                            .padding(.trailing, 18)
+                                        HStack(spacing: 0) {
+                                            
+                                            Image("\(athlete.id)")
+                                                .resizable()
+                                                .frame(width: 43, height: 43)
+                                                .padding(.leading, 18)
+                                            
+                                            Text(athlete.name)
+                                                .font(.medium_16px)
+                                                .padding(.leading, 12)
+                                            
+                                            Spacer()
+                                            
+                                            Text(athlete.score, format: .number)
+                                                .font(.medium_18px)
+                                                .frame(width: 22, height: 24)
+                                                .padding(.trailing, 18)
+                                        }
+                                        .frame(maxWidth: .infinity, minHeight: 72)
+                                        .background(.white)
+                                        .cornerRadius(16)
+                                        .padding(.horizontal, 18)
+                                        .shadow(color: Color("athleteBoxShadow"), radius: 12, x: 0, y: 4)
                                     }
-                                    .frame(maxWidth: .infinity, minHeight: 72)
-                                    .background(.white)
-                                    .cornerRadius(16)
-                                    .padding(.horizontal, 18)
-                                    .shadow(color: Color("athleteBoxShadow"), radius: 12, x: 0, y: 4)
                                 }
                             }
+                            .onTapGesture { showSearchBox = false}
+                            Spacer()
                         }
-                        .onTapGesture { showSearchBox = false}
-                        Spacer()
                     }
-                }
-            }
+                }}
         }
     }
 }
